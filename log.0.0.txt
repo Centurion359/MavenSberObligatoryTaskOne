@@ -1,0 +1,4 @@
+июн. 01, 2021 10:57:46 ДП centurion359.sber.main.Main main
+INFO: Начало квеста
+июн. 01, 2021 10:57:46 ДП centurion359.sber.threads.SaveThread run
+INFO: Запуск потока сохранения
