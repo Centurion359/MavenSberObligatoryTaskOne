@@ -2,6 +2,7 @@ package centurion359.sber.workClass;
 
 import centurion359.sber.enums.Moveable;
 import centurion359.sber.enums.NameItems;
+import centurion359.sber.general.General;
 import centurion359.sber.main.Main;
 
 import java.io.Serializable;
@@ -29,14 +30,14 @@ public class Inventory implements Serializable {
 
     public List remove(){
         for (int i = 0; i < items.size(); i++) {
-            Main.inventoryUser.add(items.get(i));
+            General.inventoryUser.add(items.get(i));
         }
         this.items.removeAll(items);
         return items;
     }
 
     public List removeName(String name){
-        Main.inventoryUser.items.removeIf(item -> item.getName() == name );
+        General.inventoryUser.items.removeIf(item -> item.getName() == name );
         return items;
     }
 

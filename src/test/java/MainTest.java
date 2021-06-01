@@ -1,3 +1,4 @@
+import centurion359.sber.general.General;
 import centurion359.sber.main.Main;
 import centurion359.sber.workClass.Location;
 import centurion359.sber.workClass.Player;
@@ -10,6 +11,6 @@ public class MainTest {
         Player player = new Player();
         player.setName("Тестовый помощник");
         player.setLocation(new Location("Тестовое пространство"));
-        Main.getMainLocation(player);
+        General.getMainLocation(player);
     }
 }
